@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/kardianos/service"
+	"github.com/sersoong/go-service-test/web"
 )
 
 var serviceConfig = &service.Config{
@@ -79,5 +80,5 @@ func (p *Program) Stop(s service.Service) error {
 func (p *Program) run() {
 	// 此处编写具体的服务代码
 	logger.Info("启动web服务")
-	StartWeb()
+	web.StartWeb()
 }

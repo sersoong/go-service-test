@@ -2,6 +2,9 @@ module github.com/sersoong/go-service-test
 
 go 1.14
 
+replace github.com/sersoong/go-service-test/web => ./web
+
+
 require (
 	github.com/gin-gonic/gin v1.6.2
 	github.com/golang/protobuf v1.4.0 // indirect
@@ -11,6 +14,3 @@ require (
 	golang.org/x/sys v0.0.0-20200420163511-1957bb5e6d1f // indirect
 )
 
-replace(
-	github.com/sersoong/go-service-test/web => ./web
-)
